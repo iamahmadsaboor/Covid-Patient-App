@@ -6,14 +6,13 @@
 
     <ImageView
         android:id="@+id/logoImageView"
-        android:layout_width="400dp"
-        android:layout_height="400dp"
-        android:src="@drawable/logo"
+        android:layout_width="394dp"
+        android:layout_height="317dp"
         android:scaleType="centerInside"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <TextView
@@ -21,30 +20,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
-        android:text="COVID-19 Patient Management"
+        android:text="@string/covid_19_patient_management"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/logoImageView"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.4" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoImageView" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/titleTextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.5"
-        android:layout_marginTop="32dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        app:layout_constraintVertical_bias="0.5">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_marginTop="32dp"
             android:gravity="center"
+            android:orientation="vertical"
             app:layout_constraintTop_toBottomOf="@id/titleTextView">
 
             <LinearLayout
@@ -54,52 +54,42 @@
 
                 <Button
                     android:id="@+id/addPatientButton"
-                    android:layout_width="0dp"
+                    android:layout_width="16dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Add Patient"
-                    android:textColor="#FFFFFF"
-                    android:background="#007BFF"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="8dp"
-                    android:layout_marginBottom="8dp"/>
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="1"
+                    android:background="#007BFF"
+                    android:text="Add Patient"
+                    android:textColor="#FFFFFF" />
 
                 <Button
                     android:id="@+id/updateRecordButton"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Update Record"
-                    android:textColor="#FFFFFF"
-                    android:background="#007BFF"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="16dp"
-                    android:layout_marginBottom="8dp"/>
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="1"
+                    android:background="#007BFF"
+                    android:text="Update"
+                    android:textColor="#FFFFFF" />
 
             </LinearLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="-----OR-----"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:layout_marginBottom="8dp"/>
 
             <Button
                 android:id="@+id/checkReportButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Check Patient Report"
-                android:textColor="#FFFFFF"
-                android:background="#007BFF"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
-                android:layout_marginBottom="16dp"/>
+                android:layout_marginBottom="16dp"
+                android:background="#007BFF"
+                android:text="Check Patient Report"
+                android:textColor="#FFFFFF" />
 
         </LinearLayout>
-
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
