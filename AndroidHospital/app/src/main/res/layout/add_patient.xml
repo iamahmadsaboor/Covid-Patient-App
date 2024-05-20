@@ -58,9 +58,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:entries="@array/provinces"
-            android:padding="12dp"
             android:background="@drawable/spinner_background"
+            android:entries="@array/provinces"
+            android:minHeight="48dp"
+            android:padding="12dp"
             android:popupBackground="#FFFFFF" />
 
         <Spinner
@@ -68,35 +69,36 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:entries="@array/medical_statuses"
-            android:padding="12dp"
             android:background="@drawable/spinner_background"
+            android:entries="@array/medical_statuses"
+            android:minHeight="48dp"
+            android:padding="12dp"
             android:popupBackground="#FFFFFF" />
 
         <Button
             android:id="@+id/pictureButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Take Picture"
             android:layout_marginBottom="16dp"
-            android:textColor="#FFFFFF"
             android:background="#007BFF"
-            android:padding="16dp"
-            android:minHeight="48dp"
+            android:gravity="center"
             android:minWidth="48dp"
-            android:gravity="center" />
+            android:minHeight="48dp"
+            android:padding="16dp"
+            android:text="Take Picture"
+            android:textColor="#000000" />
 
         <Button
             android:id="@+id/submitBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Submit"
-            android:textColor="#FFFFFF"
             android:background="#28A745"
-            android:padding="16dp"
-            android:minHeight="48dp"
+            android:gravity="center"
             android:minWidth="48dp"
-            android:gravity="center" />
+            android:minHeight="48dp"
+            android:padding="16dp"
+            android:text="Submit"
+            android:textColor="#212121" />
 
     </LinearLayout>
 </ScrollView>
